@@ -7,7 +7,7 @@ import (
 const englishHelloPrefix = "Hello,"
 
 func main() {
-	fmt.Println(Hello("world"))
+	fmt.Println(Hello("Golang"))
 }
 
 func Hello(name string) string {
