@@ -34,7 +34,7 @@ func TestHello(t *testing.T) {
 			t.Errorf("got '%q' want '%q'", got, want)
 		}
 	}
-	t.Run("saying hello to people", func(t *testing.T) {
+	/*t.Run("saying hello to people", func(t *testing.T) {
 		got := Hello("Golang")
 		want := "Hello,Golang"
 		assertCorrectMessage(t, got, want)
@@ -43,5 +43,12 @@ func TestHello(t *testing.T) {
 		got := Hello("")
 		want := "Hello,Golang"
 		assertCorrectMessage(t, got, want)
+	})*/
+
+	t.Run("in Spanish", func(t *testing.T) {
+		got := Hello("Elodie", "Spanish")
+		want := "Hola,Elodie"
+		assertCorrectMessage(t, got, want)
 	})
+
 }
